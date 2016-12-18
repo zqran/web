@@ -1,13 +1,1 @@
-(function(angular) {
-  // "use strict";
-  
-  // start your ride
-  // 主模块
-  angular.module('moviecat', [
-  		'moviecat.details',
-  		'moviecat.home_page',
-  		'moviecat.movie_list',
-  		'moviecat.atuoActive',
-	]);
-
-})(angular);
+!function(o){o.module("moviecat",["moviecat.home","moviecat.details","moviecat.movie_list","moviecat.jsonp","moviecat.autoActive"]).controller("MainController",["$scope","$location",function(o,e){o.query="",o.search=function(){e.url("/search?q="+o.query)}}])}(angular);
