@@ -1,1 +1,1 @@
-!function(e){e.module("moviecat.home",["ngRoute"]).config(["$routeProvider",function(e){e.when("/home_page",{templateUrl:"./home/view.html"})}])}(angular);
+!function(e){e.module("moviecat.home",["ngRoute"]).config(["$routeProvider",function(e){e.when("/home_page",{templateUrl:"./home/view.html"}).otherwise({redirectTo:"/home_page"})}])}(angular);
